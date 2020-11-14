@@ -3,6 +3,7 @@
   "short_name": "mypwa",
   "description": "",
   "start_url": "index.html",
+  "scope": "./abrir-contato-whatsapp/",
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
