@@ -1,0 +1,1 @@
+const cacheName="pwa-v1",assets=["./","./index.html","./app.bundle.js"];self.addEventListener("install",(e=>{e.waitUntil(caches.open("pwa-v1").then((e=>e.addAll(assets))))})),self.addEventListener("fetch",(e=>{e.respondWith(caches.match(e.request,{ignoreSearch:!0}).then((t=>t||fetch(e.request))))}));
