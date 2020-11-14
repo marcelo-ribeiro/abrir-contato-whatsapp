@@ -1,7 +1,7 @@
 {
   "name": "pwa-starter-kit",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "main": "app.bundle.js",
   "scripts": {
     "start": "webpack serve",
