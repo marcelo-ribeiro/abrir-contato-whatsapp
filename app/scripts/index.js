@@ -1,10 +1,8 @@
-import "../styles/main.scss";
-
 ((
   isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
   baseUrl = isMobile
     ? "whatsapp://send/?phone="
-    : "https://api.whatsapp.com/send?phone=",
+    : "https://wa.me/",
   form = document.forms[0],
   inputCode = document.getElementById("input-code"),
   codeList = document.getElementById("input-code-list"),

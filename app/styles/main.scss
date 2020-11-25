@@ -2,8 +2,8 @@
 :root {
   --color-primary: #25d366;
   --color-bg: #ece5dd;
-  --color-teal-green-dark: #075e54;
   --color-teal-green: #128c7e;
+  --color-teal-green-dark: #075e54;
   --color-button: var(--color-teal-green);
 }
 
@@ -17,9 +17,9 @@ html {
   overflow: auto;
   font: 16px/1.5 sans-serif;
   background-color: var(--color-bg);
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

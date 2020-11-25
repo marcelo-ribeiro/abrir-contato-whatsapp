@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Abrir no WhatsApp</title>
+    <title>Abrir contato no WhatsApp</title>
     <meta
       name="description"
       content="Enviar mensagem pelo WhatsApp sem salvar o contato no seu smartphone"
@@ -46,21 +46,7 @@
     />
     <meta name="msapplication-TileColor" content="#075e54" />
 
-    <!-- Registering our Service worker -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("./service-worker.js", { scope: "./" })
-          .then(function (registration) {
-            console.log("Service worker registrado com sucesso:", registration);
-          })
-          .catch(function (error) {
-            console.log("Service worker falhou ao registrar:", error);
-          });
-      } else {
-        console.log("Service workers não é suportado pelo navegador.");
-      }
-    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body id="app" class="app">
     <header class="app__header">
@@ -519,6 +505,22 @@
     </main>
 
     <footer class="app__footer"></footer>
+
+    <!-- Registering our Service worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js", { scope: "./" })
+          .then(function (registration) {
+            console.log("Service worker registrado com sucesso:", registration);
+          })
+          .catch(function (error) {
+            console.log("Service worker falhou ao registrar:", error);
+          });
+      } else {
+        console.log("Service workers não é suportado pelo navegador.");
+      }
+    </script>
 
     <script src="app.bundle.js"></script>
   </body>

@@ -1,13 +1,13 @@
 {
   "name": "Abrir contato no Whatsapp",
-  "short_name": "Abrir no Whatsapp",
+  "short_name": "Abrir contato no Whatsapp",
   "description": "",
   "start_url": ".",
   "scope": "/abrir-contato-whatsapp/",
   "display": "standalone",
   "background_color": "#ece5dd",
   "theme_color": "#075e54",
-  "orientation": "portrait-primary",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "./assets/icon-48x48.png",
