@@ -2,7 +2,9 @@ const cacheName = "pwa-v1";
 const assets = [
   "./",
   "./index.html",
-  "./app.bundle.js"
+  "./app.bundle.js",
+  "./assets/logo.svg",
+  "./favicon.png"
 ];
 
 self.addEventListener("install", event => {

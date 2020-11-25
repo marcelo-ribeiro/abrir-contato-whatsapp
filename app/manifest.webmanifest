@@ -2,11 +2,11 @@
   "name": "mypwa",
   "short_name": "mypwa",
   "description": "",
-  "start_url": "index.html",
-  "scope": "https://marcelo-ribeiro.github.io/abrir-contato-whatsapp/",
+  "start_url": ".",
+  "scope": "/abrir-contato-whatsapp/",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "background_color": "#ece5dd",
+  "theme_color": "#075e54",
   "orientation": "portrait-primary",
   "icons": [
     {
