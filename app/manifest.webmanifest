@@ -1,6 +1,6 @@
 {
-  "name": "mypwa",
-  "short_name": "mypwa",
+  "name": "Abrir contato no Whatsapp",
+  "short_name": "Abrir no Whatsapp",
   "description": "",
   "start_url": ".",
   "scope": "/abrir-contato-whatsapp/",
