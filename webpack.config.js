@@ -45,6 +45,8 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     // watchContentBase: true,
     compress: true,
+    port: 8000, //process.env.PORT, // Defaults to 8080
+    open: true
   },
   // devServer: {
   //   stats: 'errors-only',

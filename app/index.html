@@ -6,14 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Abrir no WhatsApp</title>
-    <meta name="description" content="Enviar mensagem pelo WhatsApp
-    sem salvar o contato no seu smartphone" />
+    <meta
+      name="description"
+      content="Enviar mensagem pelo WhatsApp sem salvar o contato no seu smartphone"
+    />
 
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Web Application Manifest -->
     <link rel="manifest" href="manifest.webmanifest" />
 
+    <!-- Browser icon -->
+    <link rel="icon" href="favicon.png" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Abrir no WhatsApp" />
+    <link rel="icon" sizes="192x192" href="assets/icon-192x192.png" />
+
+    <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#075e54" />
 
-    <!-- IOS support -->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar" content="#075e54" />
     <link rel="apple-touch-icon" href="assets/icon-48x48.png" />
     <link rel="apple-touch-icon" href="assets/icon-72x72.png" />
@@ -23,8 +39,15 @@
     <link rel="apple-touch-icon" href="assets/icon-192x192.png" />
     <link rel="apple-touch-icon" href="assets/icon-512x512.png" />
 
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta
+      name="msapplication-TileImage"
+      content="assets/icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#075e54" />
+
+    <!-- Registering our Service worker -->
     <script>
-      // Registering our Service worker
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("./service-worker.js", { scope: "./" })
@@ -471,8 +494,8 @@
               onfocus="this.name = 'phone_' + Date.now()"
               type="tel"
               pattern="[0-9]*"
-              placeholder="Phone number"
-              title="Phone number"
+              placeholder="DDD + Telefone"
+              title="DDD + Telefone"
               autofocus
               required
             />

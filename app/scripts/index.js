@@ -1,4 +1,4 @@
-import '../styles/main.scss';
+import "../styles/main.scss";
 
 ((
   isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
@@ -15,13 +15,12 @@ import '../styles/main.scss';
   }
 
   codeList.addEventListener("change", (event) => {
-    inputCode.value = "+" + event.target.value;
+    inputCode.value = `+${event.target.value}`;
     inputPhone.focus();
   });
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log("form submit event :>> ", event);
 
     const url =
       baseUrl +
