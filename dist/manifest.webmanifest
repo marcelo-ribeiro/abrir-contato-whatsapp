@@ -2,7 +2,7 @@
   "name": "Abrir contato no Whatsapp",
   "short_name": "Abrir no Whatsapp",
   "description": "",
-  "start_url": "./?v=1.0.0",
+  "start_url": ".",
   "scope": "/abrir-contato-whatsapp/",
   "display": "standalone",
   "background_color": "#ece5dd",
