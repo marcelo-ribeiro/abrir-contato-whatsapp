@@ -195,11 +195,10 @@ button {
     flex-shrink: 0;
     width: 2.5rem;
     height: 2.5rem;
-    fill: currentColor;
   }
 
   &:active {
     transition: none;
-    // opacity: 0.75;
+    filter: brightness(1.25);
   }
 }
