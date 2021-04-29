@@ -8,23 +8,20 @@
   codeList = document.getElementById("input-code-list"),
   inputPhone = document.getElementById("input-phone")
 ) => {
-  function formatPhone(phone) {
-    return phone.replace(/\s|\+|-|\(|\)/g, "");
-  }
+  const formatPhone = phone =>
+    phone.replace(/\s|\+|-|\(|\)/g, "");
 
-  codeList.addEventListener("change", (event) => {
+  codeList.addEventListener("change", event => {
     inputCode.value = `+${event.target.value}`;
     inputPhone.focus();
   });
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", event => {
     event.preventDefault();
-
     const url =
       baseUrl +
       inputCode.value.replace("+", "") +
       formatPhone(inputPhone.value);
-
     window.open(url, "_blank");
     inputPhone.value = "";
   });
