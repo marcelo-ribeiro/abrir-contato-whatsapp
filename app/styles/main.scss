@@ -126,7 +126,6 @@ form {
   background: #fff;
   box-shadow: 0 1px 3px rgba(#000, 0.15);
   border-radius: 2em 0 0 2em;
-  max-width: calc(1.5rem * 12);
   padding-right: 0.75rem;
 }
 
@@ -168,10 +167,8 @@ label {
   }
 
   &-phone {
-    padding-right: 2rem;
+    padding-right: 2.5rem;
     font-size: 1.125rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   &::placeholder {
@@ -204,7 +201,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-left: -0.75rem;
+  margin-left: -2rem;
   padding: 0;
   width: 5rem;
   height: 5rem;
