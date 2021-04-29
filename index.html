@@ -46,6 +46,9 @@
     />
     <meta name="msapplication-TileColor" content="#075e54" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body id="app" class="app">
@@ -70,7 +73,6 @@
               class="input input-code"
               id="input-code"
               type="tel"
-              pattern="[0-9]*"
               value="+55"
               minlength="2"
               maxlength="3"
@@ -480,9 +482,8 @@
               id="input-phone"
               onfocus="this.name = 'phone_' + Date.now()"
               type="tel"
-              pattern="[0-9]*"
-              placeholder="DDD + Telefone"
-              title="DDD + Telefone"
+              placeholder="(99) 99999-9999"
+              title="(99) 99999-9999"
               autofocus
               required
             />
@@ -504,7 +505,10 @@
       </form>
     </main>
 
-    <footer class="app__footer"></footer>
+    <footer class="app__footer">
+      <strong>Termos e Privacidade:</strong>
+      <p style="margin-top: 0;">Nós não usamos seus dados ou gravamos e/ou compartilhamos os números digitados.</p>
+    </footer>
 
     <!-- Registering our Service worker -->
     <script>
