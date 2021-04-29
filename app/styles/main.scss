@@ -46,12 +46,18 @@ footer {
   width: 100%;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 main {
   flex-grow: 1;
 }
 
 footer {
-  flex-grow: 0;
   text-align: center;
   font-size: 11px;
 }
@@ -87,13 +93,6 @@ svg {
 
 svg {
   fill: currentColor;
-}
-
-.app__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
 }
 
 .app__title {

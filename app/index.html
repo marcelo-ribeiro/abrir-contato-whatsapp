@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body id="app" class="app">
-    <header class="app__header">
+    <header>
       <img
         class="app__logo"
         src="./assets/logo.svg"
@@ -66,7 +66,7 @@
       </h1>
     </header>
 
-    <main class="app__main">
+    <main>
       <form id="form" autocomplete="off">
         <div class="inputs">
           <label class="label-code" for="input-code">
@@ -75,16 +75,15 @@
               id="input-code"
               type="tel"
               value="+55"
-              minlength="2"
-              maxlength="3"
               placeholder="55"
               tabindex="-1"
               readonly
             />
+            
             <select
               id="input-code-list"
               class="input custom-select"
-              title="Códido do país"
+              title="Código do país"
               required
             >
               <option data-countrycode="GB" value="44">UK (+44)</option>
@@ -466,6 +465,7 @@
               <option data-countrycode="ZM" value="260">Zambia (+260)</option>
               <option data-countrycode="ZW" value="263">Zimbabwe (+263)</option>
             </select>
+            
             <!-- <svg
               class="icon icon-keyboard_arrow_down"
               xmlns="http://www.w3.org/2000/svg"
@@ -484,14 +484,13 @@
               onfocus="this.name = 'phone_' + Date.now()"
               type="tel"
               placeholder="(99) 99999-9999"
-              title="(99) 99999-9999"
               autofocus
               required
             />
           </label>
         </div>
 
-        <button class="button" id="button" name="send" type="submit">
+        <button type="submit">
           <span>Abrir contato no WhatsApp</span>
           <svg
             class="icon icon-send"
@@ -506,7 +505,7 @@
       </form>
     </main>
 
-    <footer class="app__footer">
+    <footer>
       <strong>Termos e Privacidade:</strong>
       <p style="margin-top: 0;">Nós não usamos seus dados ou gravamos e/ou compartilhamos os números digitados.</p>
     </footer>
